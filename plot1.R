@@ -1,5 +1,5 @@
+setwd("C:/R/cousera")
 png("plot1.png")
-setwd("E:/R/cousera")
 data<-read.table("household_power_consumption/household_power_consumption.txt",
                  sep=";",header=FALSE,col.names=c("date","time",
                  "global_active_power","global_reactive_power",
