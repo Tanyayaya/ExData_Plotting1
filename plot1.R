@@ -13,8 +13,8 @@ startDate = as.Date("2007-02-01")
 endDate = as.Date("2007-02-02")
 data<-subset(data,date==startDate|date==endDate)
 data<-subset(data,global_active_power!="?")
-launch the png file and make the plot
-png("plot1.png")
+#launch the png file and make the plot
+png( filename = "plot1.png", width = 480, height = 480 )
 with(data,hist(as.numeric(global_active_power),12,
     col="red",main="Global Active Power",xlab = "Global Active Power(kilowatts)",
     ylab = "Frequency"))
